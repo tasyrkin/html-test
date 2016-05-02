@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html>
+<head>
+<style>
+/*if floated elements have non-floated parent elements, the parent will collapse, source: http://goo.gl/MuCEgk*/
+.all { float: left; width: 100%; }
+
+.left, .right { float: left; width: 50% } 
+
+.all {border: 5px red solid}
+.left {background-color: yellow;}
+.right {background-color: green;}
+</style>
+</head>
+<body>
+<div class="all">
+<div class="left">dd</div>
+<div class="right">dd</div>
+</div>
+</body>
+</html>
